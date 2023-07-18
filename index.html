@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Index Fund</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Crypto Index Fund</h1>
+  </header>
+
+  <main>
+    <section class="coin-selection">
+      <h2>Choose Your Coins</h2>
+      <div class="easy-options">
+        <button id="half">50/50</button>
+        <button id="btcMax">BTC Maxi</button>
+        <button id="ethMax">ETH Maxi</button>
+
+
+      </div>
+      <form id="coinForm">
+        <div class="coin-option">
+          <label for="btc">Bitcoin (BTC)</label>
+          <input type="range" name="btc" id="btc" min="0" max="100" step="0.1" value="50">
+          <span id="btcAmount">50</span> %
+        </div>
+        <div class="coin-option">
+          <label for="eth">Ethereum (ETH)</label>
+          <input type="range" name="eth" id="eth" min="0" max="100" step="0.1" value="50">
+          <span id="ethAmount">50</span> %
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="transaction-summary">
+      <h2>Transaction Summary</h2>
+      <div id="summaryResult">
+        <!-- Transaction summary will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Crypto Index Fund. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
